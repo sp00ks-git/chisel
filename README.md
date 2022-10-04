@@ -1,11 +1,13 @@
 # Chisel
 
-## Build Chisel   
+## Build Chisel  
+
+## Use Garble to Obfuscate for Av Evasion Part 1 of 2
 ```
 env GOOS=windows GOARCH=amd64 ~/go/bin/garble -seed=random -literals -tiny build .
 ```
 
-## Pack Chisel using upx for AV Evasion   
+## Pack Chisel using upx for AV Evasion Part 2 of 2
 ```
 upx chisel.exe --brute -o test3.exe   
 ```
