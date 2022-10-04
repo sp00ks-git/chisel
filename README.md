@@ -1,5 +1,16 @@
 # Chisel
 
+## Build Chisel   
+```
+env GOOS=windows GOARCH=amd64 ~/go/bin/garble -seed=random -literals -tiny build .
+```
+
+## Pack Chisel using upx for AV Evasion   
+```
+upx chisel.exe --brute -o test3.exe   
+```
+
+
 [![GoDoc](https://godoc.org/github.com/jpillora/chisel?status.svg)](https://godoc.org/github.com/jpillora/chisel) [![CI](https://github.com/jpillora/chisel/workflows/CI/badge.svg)](https://github.com/jpillora/chisel/actions?workflow=CI)
 
 Chisel is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server. Written in Go (golang). Chisel is mainly useful for passing through firewalls, though it can also be used to provide a secure endpoint into your network.
